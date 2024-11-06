@@ -1,14 +1,16 @@
-## Branching Strategy
+# ShopEase Setup Guide
 
-- **main**: Stable, production-ready code.
-- **develop**: Active development.
-- **feature/\***: Specific feature development (e.g., `feature/user-auth`).
-- **hotfix/\***: Urgent bug fixes (e.g., `hotfix/urgent-bug-fix`).
+## GitHub Link:
+[https://github.com/obaidullahofficial/ShopEase.git](https://github.com/obaidullahofficial/ShopEase.git)
 
-### Workflow:
-1. Create a feature branch from `develop`.
-2. Develop the feature and commit changes.
-3. Push the feature branch to GitHub.
-4. Create a Pull Request (PR) to merge the feature into `develop`.
-5. After review and testing, merge `develop` into `main`.
-6. For urgent fixes, create a `hotfix` branch from `main`, fix the issue, and merge back into both `main` and `develop`.
+## Docker Images:
+- **User Service image**: [Docker Hub - User Service](https://hub.docker.com/r/obaidullahofficial/shopease-user-service)
+- **Product Service image**: [Docker Hub - Product Service](https://hub.docker.com/r/obaidullahofficial/shopease-product-service)
+- **Order Service image**: [Docker Hub - Order Service](https://hub.docker.com/r/obaidullahofficial/shopease-order-service)
+
+## Pull Docker Images:
+Run the following commands to pull the latest images:
+```bash
+docker pull obaidullahofficial/shopease-user-service:v1
+docker pull obaidullahofficial/shopease-product-service:v1
+docker pull obaidullahofficial/shopease-order-service:v1
